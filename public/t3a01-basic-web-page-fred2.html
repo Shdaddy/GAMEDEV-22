@@ -24,16 +24,29 @@ Youtube Embedded video <br>
 
 <h3> Write about Ellis' 10 main areas of coding</h3>
 
-<input type=button value="0. Pseudo Code" onclick="{
-  document.getElementById('myDivo1').innerHTML = 'Hello don\'t World
-}">
+<input type=button value="0. Pseudo Code" onclick="{ 
+    document.getElementById('myDiv01').innerHTML = 'Hello don\'t World'
+ }">
+ 
+ <input type=button value="1. Input/Output" onclick="{
+    document.getElementById('myDiv01').innerHTML = ' Input Thanks For Clicking Me <br>'
+ +'sdfg<br>sdfg<br>output is...'      
+ }">
+ 
+ <input type=button value="2. Variables" onclick="{
+ var x = 5 + 2 + 3
+ document.getElementById('myDiv01').innerHTML = x;     
+ }">
 
-<input type=button value="1. Input/Output" onclick="{
-  document.getElementById('myDivo1').innerHTML = 'Input adffgdsfsgsdfdfg<br>'
-  +'sdfg<br>sdfg<br>output is..."
-}">
-<input type=button value="4. Decisions" onclick="{
-  document.getElementById('myDivo1').innerHTML =
+ <input type=button value="3. Loops" onclick="{                                             
+let sum = 0
+for (let i = 0; i <= 9; i++, sum += i)
+console.log(sum)                       
+ document.getElementById('myDiv01').innerHTML = sum;                                            
+ }">
+ 
+<input type=button value="4.Decisions" onclick="{
+   document.getElementById('myDiv01').innerHTML = ` 
   Decisions use the if statement to make true
   false variable decisions<br>
 <pre>
@@ -41,7 +54,8 @@ if (hour < 18) {
   greeting = \'Good day\';
 }
 </pre>
-`}"><br>
+                                                
+`}">
 You do: 2:variables, 3:loops, 5: functions, 6:events, 7: arrays, 8: objects, 9:classes<br>
 
 <div id="myDivo1">...</div>
