@@ -1,0 +1,69 @@
+Version 0.1.1
+<h2> Variables </h2>
+Reference Link
+<a href="https://www.w3schools.com/cssref/default.asp">w3schools</a><br>
+Other Languages use: Boo, int, char, string, floata, int+8, int+16, etc.<br>
+NOTE: Javascript does use Var and Let for local variables.<br>
+Mr.Ellis prefers document.myVarName<br>
+<h4> Example Variable Code</h4>
+<pre>
+  let myIn01 = document.getElementById('myText01').value
+  document.getElementById('MyDiv01').innerHTML = MyIn01
+  </pre>
+<h4> Example of Working Code</h4>
+<input id="myText01" type=text value="dog" ><br>
+<input type=button value="The Variable" onClick="{
+  let myIn01 = document.getElementById('myText01').value
+  document.getElementById('myDiv01').innerHTML = myIn01
+}"><br>
+<input type=button value="No Variable" onClick="{
+  document.getElementById('myDiv01').innerHTML =
+  document.getElementById('myText01').value
+}"><br>
+<div id="myDiv01">...</div>
+<h4><--------------------------------------------------------------------------------------------></h4>
+  <h4> Type your Name Here</h4>
+<input id="myText02" type=text value="John" ><br>
+<input type=button value="Submit" onClick="{
+  let myIn02 = document.getElementById('myText02').value
+  document.getElementById('myDiv02').innerHTML = 'Hello there ' + myIn02 + ' thanks for coming!'
+}"><br>
+<div id="myDiv02">...</div>
+
+<h4><--------------------------------------------------------------------------------------------></h4>
+  
+ <h4> Type your Birth Year </h4>
+  <input id="myAge" type=number value="2004" ><br>
+  
+  <input type=button value="Submit" onClick="{
+    let myBirthday = document.getElementById('myAge').value
+    document.getElementById('myDiv06').innerHTML = ' You are about ' + (parseFloat(2021)-parseFloat(myBirthday)) + ' years old'
+                                                                                                                           
+    }"><br>
+  <div id="myDiv06">...</div>
+ <h4><--------------------------------------------------------------------------------------------></h4>
+  
+ <h4> input a Random Number </h4>
+  <input id="myRandomNumber" type=number value="678" ><br>
+
+  <input type=button value="Submit" onClick="{
+    let myNumbero = document.getElementById('myRandomNumber').value
+    document.getElementById('myDiv07').innerHTML = myNumbero + ' is the number you have written'
+    document.getElementById('myDiv08').innerHTML = myNumbero + ' is the number you have written'
+   }"><br>
+
+  <div id="myDiv07">...</div>
+  <div id="myDiv08">...</div>
+
+
+<h4><--------------------------------------------------------------------------------------------></h4>
+@@ -133,8 +133,8 @@ <h4> input a Random Word </h4>
+
+  <input type=button value="Submit" onClick="{
+    let myWord = document.getElementById('myRandomWord').value
+    document.getElementById('myDiv08').innerHTML = myWord + ' is the word you have written'
+    document.getElementById('myDiv09').innerHTML = myWord + ' is the word you have written'
+   }"><br>
+
+  <div id="myDiv08">...</div>
+  <div id="myDiv09">...</div>
