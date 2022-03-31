@@ -3,11 +3,11 @@
 <style>
 
 </style>
-<h5>version 0.0.3</h5>
+<h5>version 0.0.1</h5>
 </head>
 
-<body style="background-color:#ff968f; font-size:150%;">
-<h2 align=center>t3a07 decisions Talon</h2><br><br>
+<body style="background-color:red; font-size:150%;">
+<h2 align=center>t1a07 decisions Talon</h2><br><br>
 <a href="https://www.w3schools.com/js/js_if_else.asp">Good reference to if...else statments<br>Note: ! = NOT, && = AND, || = OR</a>
 <h4>Example input/output code</h4>
 <pre>
@@ -23,10 +23,10 @@ if (hour < 18) {
 <input id="myNum01" type=number value="4"><br>
 <input type=button value="Simple if" onClick="{
 	let myIn01 = parseFloat(document.getElementById('myNum01').value)
-	if (myIn01 >= 7) {
-		document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 7'
+	if (myIn01 >= 10) {
+		document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 10'
 	} else { 
-		document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 7'
+		document.getElementById('myDiv01').innerHTML = myIn01 + ' is less than 10'
 	}
 }">
 <br>
@@ -47,11 +47,11 @@ enter your age:<br> <input id="myNum02" type=number value="5"><br>
 <input type=button value="Check Age" onClick="{
 	let myIn02 = parseFloat(document.getElementById('myNum02').value)
 	if (myIn02 >= 19) {
-		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old! you are allowed drink, drive, and go concerts!'
+		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old! you are allowed drink, drive, !'
 	} else if (myIn02 >= 16) { 
-		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old! you are only allowed drive!'
+		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old! you are only allowed drive !'
 	} else if (myIn02 >= 13) {
-		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old i can play e10 video games!'
+		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old! you are only !'
 	} else {
 		document.getElementById('myDiv02').innerHTML = 'you are ' + myIn02 + ' years old! you arent allowed to do anything!'
 	}
