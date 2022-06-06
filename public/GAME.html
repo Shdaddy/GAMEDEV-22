@@ -1,4 +1,48 @@
-// more if statements here like the above
+<h6> Version 0.0.1 </h6>
+
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Socialist_red_flag.svg/2560px-Socialist_red_flag.svg.png" onload="setTimeout(TimeR, 1)">
+
+<h1 align=center>t2a11 Game Template by Talon</h1>
+<br><br><br><br>
+
+<script>
+
+   // global variables here
+   let myGlobalX = 0
+   let myClock
+
+var rad = Math.floor((Math.random() * 10000) + 1000);
+
+var Var1 = "Green"
+
+   // global functions here
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)   
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)   
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&      	   
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+
+
+function myCheckHit(){
+   if ( myHitOther('myImg01','myImg02') ){
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a13-keydown.html'  // go to your next level
+   }
+
+
+   // more if statements here like the above
 
 
 
