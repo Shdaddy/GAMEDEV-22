@@ -5,7 +5,16 @@
 <h5>version 0.0.1</h5>
 </head>
 
-<body style="background-color:#a1bdff; font-size:120%;">
+<body style="background-image: url(https://media4.giphy.com/media/3o7aD6L3BHd76R0RCE/giphy.gif?cid=ecf05e473ddw1ha8u0xxg2khh2filllvqdt4ogu15lyah42o&rid=giphy.gif&ct=g);
+    background-size: cover;
+    
+    
+    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+">
 
 <h1 align=center>T3A16-spy-Talon.html</h1>
 
@@ -175,50 +184,7 @@
 
 <h4>My Encoder/Decoder</h4>
 
-<h5>Base64</h5>
-<textarea id="myArea04" rows=3 cols=40>Hello how are you</textarea><br> 
-<input type=button value="encrypt" onclick="{
-	myString = document.getElementById('myArea04').value
-	myEncode = btoa(myString)
-	document.getElementById('myArea05').innerHTML = myEncode
-}"><br><br>
-<textarea id="myArea05" rows=3 cols=40></textarea><br>
 
-<input type=button value="decrypt" onclick="{
-	myString = document.getElementById('myArea05').value
-	myDecode = atob(myString)
-	document.getElementById('myArea06').innerHTML = myDecode
-}"><br><br>
-<textarea id="myArea06" rows=3 cols=40></textarea><br>
-<hr>
-<h5>ROT13</h5>
-<textarea id="myArea07" rows=3 cols=40>Hello how are you</textarea><br> 
-<input type=button value="encrypt" onclick="{
-	const str = document.getElementById('myArea07').value
-    const input = ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789';
-    const output = '123456789NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm ';
-    let myEncoded = '';
-    for (let myLoop = 0; myLoop < str.length; myLoop++) {
-        const index = input.indexOf(str[myLoop]);
-        myEncoded += output[index];
-    }
-    document.getElementById('myArea08').innerHTML = myEncoded;
-}"><br><br>
-<textarea id="myArea08" rows=3 cols=40></textarea><br>
-
-<input type=button value="decrypt" onclick="{
-	const str = document.getElementById('myArea08').value
-    const input = '123456789NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm ';
-    const output = ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz123456789';
-    let myEncoded = '';
-    for (let myLoop = 0; myLoop < str.length; myLoop++) {
-        const index = input.indexOf(str[myLoop]);
-        myEncoded += output[index];
-    }
-    document.getElementById('myArea09').innerHTML = myEncoded;
-}"><br><br>
-<textarea id="myArea09" rows=3 cols=40></textarea><br>
-<hr>
 <h5>Binary</h5>
 <script>
 function myConvert() {
