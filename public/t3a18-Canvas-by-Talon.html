@@ -5,7 +5,7 @@
 <h5>version 0.0.1</h5>
 </head>
 
-<body style="background-color:#8dff85; font-size:120%;">
+<body style="background-image: url(https://img.freepik.com/free-photo/old-paper-texture-vintage-paper-background_262663-430.jpg?w=2000);">
 <h2 align=center>T3A18-canvas by Talon</h2>
 You use loops and variables to make fast fancy drawings <br><br>
 
@@ -65,46 +65,9 @@ You use loops and variables to make fast fancy drawings <br><br>
    myContext.clearRect(0, 0, myCanvas.width, myCanvas.height);
 }"><br><br>
 
-<hr>
-<input type=button value="Draw house" onclick="{
-   myContext.beginPath();
-   myContext.lineWidth = 1;   
-   myContext.moveTo(200,300);
-   myContext.lineTo(200,200);
-   myContext.lineTo(300,200);
-   myContext.lineTo(300,300);
-   myContext.lineTo(200,300);
-   myContext.moveTo(170,200);
-   myContext.lineTo(330,200);
-   myContext.lineTo(250,150);
-   myContext.lineTo(170,200);
-   myContext.stroke();
-}">
-
-<input type=text id="myText01" value="your text">
-<input type=range id="myRange01" style="width:100px;" min="0" max="1000" value="400" oninput="this.nextElementSibling.value = this.value">
-x: <output id=myRange01>400</output>
-<input type=range id="myRange02" style="width:100px;" min="0" max="600" value="100" oninput="this.nextElementSibling.value = this.value">
-y: <output id=myRange02>400</output>
-<input type="color" id="myColor01">
-Filled In: <input type=radio id="myRad01"  name="stroke">
-Outline Only: <input type=radio id="myRad02" name="stroke">
-<input type=button value="Your Text" onclick="{
-	if (document.getElementById('myRad01').checked) {
-		myContext.font = '40px Arial';
-		myContext.fillStyle = document.getElementById('myColor01').value;
-		myContext.fillText(document.getElementById('myText01').value, document.getElementById('myRange01').value, document.getElementById('myRange02').value);
-		myContext.stroke(); 
-	} else {
-		myContext.font = '40px Arial';
-		myContext.strokeStyle = document.getElementById('myColor01').value;
-		myContext.strokeText(document.getElementById('myText01').value, document.getElementById('myRange01').value, document.getElementById('myRange02').value);
-		myContext.stroke();
-	}
-}"><br>
 
 
-<br><br>
+
 
 <canvas id="myCoolTag" width="1000" height="600" style="border:1px solid #000000;"></canvas>
 
